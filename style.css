@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: "Comic Neue", cursive !important;
+}
+
+h2 {
+    font-size: 5em !important;
+    font-weight: 700 !important;
+}
+
+.bonk-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.second-container {
+    padding: 50px 0;
+    background-color: yellow;
+
+}
+
+.kabosu-bonk {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+
+#bonk-bat {
+    transform: translateX(-62%) rotate(328deg);
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+#bonk-bat.bonk {
+    transform: translateX(-53%) rotate(351deg);
+}
+
+.bonk-hero-container {
+    background-image: url('static/heaven.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.social-links {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+}
+
+.social-links img {
+    height: 70px;
+    margin-left: 20px;
+}
+
+.comic-sans-texts {
+    position: absolute;
+    width: 100%;
+    font-size: 3em;
+    font-family: "Comic Neue", cursive !important;
+    font-weight: 700;
+    height: 100%;
+    text-shadow: 1px 1px black;
+}
+
+.comic-sans-texts #first {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: rotate(333deg);
+    color: red;
+}
+
+.comic-sans-texts #second {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: rotate(10deg);
+    color: blue;
+}
+
+.comic-sans-texts #third {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: rotate(333deg);
+    color: green;
+}
+
+.comic-sans-texts #fourth {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: rotate(10deg);
+    color: yellow;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+}
+
+.bonk-gallery img {
+    transition-duration: 500ms;
+}
+
+.bonk-gallery img:hover {
+    transform: scale(1.2);
+}
+
+.bonk-gallery {
+    padding: 50px 0;
+}
+
+.bonk-gallery img {
+    max-width: 150px;
+    height: auto;
+}
+
+#bonk-button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8em;
+    color: yellow;
+    text-shadow: 1px 1px black;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        font-size: 3em;
+    }
+
+    .social-links img {
+        height: 40px;
+    }
+
+    .bonk-container img {
+        width: 95%;
+        height: auto;
+    }
+    .bonk-container {
+        height: 40vh;
+    }
+
+    h2 {
+        font-size: 3em !important;
+    }
+
+    .comic-sans-texts {
+        font-size: 2em;
+    }
+}

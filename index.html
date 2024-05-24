@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$BONK4KAB</title>
+
+    <link rel="icon" type="image/png" href="static/9.png" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bonk-hero-container">
+        <div class="social-links">
+            <a href="https://twitter.com/bonk4kabosu" target="_blank">
+                <img src="static/x.png" alt="">
+            </a>
+            <a href="https://t.me/Bonk4Kobasu" target="_blank">
+                <img src="static/tg.png" alt="">
+            </a>
+            <a href="#" target="_blank">
+                <img src="static/pumpfun.png" alt="">
+            </a>
+        </div>
+        <div class="hero-image d-flex justify-content-center">
+            <img class="" src="static/doge heaven.png" alt="">
+        </div>
+        <div class="comic-sans-texts">
+            <div id="first">much peace</div>
+            <div id="second">very god</div>
+            <div id="third">cloud</div>
+            <div id="fourth">bestest weather</div>
+        </div>
+        <div class="hero-text">
+            $BONK4KAB
+        </div>
+    </div>
+
+    <div class="second-container">
+        <h2 class="text-center">BONK TO RESPECT</h2>
+        <div class="bonk-container">
+            <img class="kabosu-bonk" src="static/kabosu-2.png" alt="">
+            <img class="kabosu-bonk" src="static/kabosu-1.png" alt="">
+            <img class="kabosu-bonk" id="bonk-bat" src="static/kabosu-3.png" alt="">
+        </div>
+        <div class="bonk-button-container d-flex justify-content-center">
+            <button id="bonk-button">BONK</button>
+        </div>
+    </div>
+
+    <div class="container bonk-gallery">
+        <h2 class="text-center">MEMORIES</h2>
+        <div class="row">
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/1.png" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/2.png" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/3.png" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/4.png" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/5.png" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/6.png" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/7.png" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/8.png" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/11.jpg" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/12.jpg" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/13.jpg" alt=""></div>
+            <div class="col-md-3 col-6 d-flex justify-content-center"><img src="static/14.webp" alt=""></div>
+        </div>
+    </div>
+
+    <audio style="visibility: hidden;" id="smash-sound" src="static/smash.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+
+    <script>
+        const bonkButton = document.getElementById('bonk-button');
+        const bonkBat = document.getElementById('bonk-bat');
+
+        bonkButton.addEventListener('click', () => {
+            const smashSound = document.getElementById('smash-sound');
+            smashSound.play();
+
+            bonkBat.classList.add('bonk');
+            setTimeout(() => {
+                bonkBat.classList.remove('bonk');
+            }, 50);
+        });
+    </script>
+</body>
+</html>
